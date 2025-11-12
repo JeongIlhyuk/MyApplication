@@ -1,9 +1,12 @@
 package com.example.myapplication.data.model
 
+import kotlinx.serialization.Serializable
+import kotlinx.serialization.SerialName
+
 @Serializable
 data class GitHubUserResponse(
     @SerialName("avatar_url")
-    var avatarUrl: String?,
+    var avatarUrl: String,
     @SerialName("bio")
     var bio: String?,
     @SerialName("blog")
@@ -37,9 +40,9 @@ data class GitHubUserResponse(
     @SerialName("location")
     var location: String?,
     @SerialName("login")
-    var login: String?,
+    var login: String,
     @SerialName("name")
-    var name: String?,
+    var name: String,
     @SerialName("node_id")
     var nodeId: String?,
     @SerialName("organizations_url")
